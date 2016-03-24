@@ -1,4 +1,11 @@
 # wcl-activity-lifecycle-demo
-Activity的生命周期
+分析 Activity 的生命周期
 
-测试使用, 用于观察生命周期的一些特性, 具体[参考](http://www.jianshu.com/p/755ec207f6d6)
+> 欢迎Follow我的[GitHub](https://github.com/SpikeKing)
+
+博客: http://www.wangchenlong.org/
+
+本文: http://www.wangchenlong.org/2016/03/23/1603/235-activity-lifecycle/
+
+[参考文章](http://www.wangchenlong.org/2016/03/23/1603/235-activity-lifecycle/)
+
