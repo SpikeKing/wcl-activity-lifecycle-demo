@@ -8,26 +8,34 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="me.chunyu.spike.wcl_activity_lifecycle_demo.MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
 
     <Button
         android:id="@+id/main_b_translucent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="透明页"/>
+        android:text="跳转透明页"/>
 
     <Button
         android:id="@+id/main_b_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/main_b_translucent"
-        android:text="第二页"/>
+        android:text="跳转第二页"/>
+
+    <TextView
+        android:id="@+id/main_tv_edit_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_b_second"
+        android:text="在下面输入信息，用于测试状态存储："/>
 
     <EditText
         android:id="@+id/main_et_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/main_b_second"
+        android:layout_below="@+id/main_tv_edit_hint"
         android:hint="@null"/>
 
     <TextView

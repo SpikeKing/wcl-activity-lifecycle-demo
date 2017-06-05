@@ -1,4 +1,4 @@
-package me.chunyu.spike.wcl_activity_lifecycle_demo;
+package org.wangchenlong.wcl_activity_lifecycle_demo;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -13,25 +13,29 @@ import android.util.Log;
 public class TranslateActivity extends AppCompatActivity {
     private static final String TAG = "DEBUG-WCL: " + TranslateActivity.class.getSimpleName();
 
-    @Override public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+    @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
 
         Log.e(TAG, "onCreate");
     }
 
-    @Override protected void onPause() {
+    @Override
+    protected void onPause() {
         super.onPause();
 
         Log.e(TAG, "onPause");
     }
 
-    @Override protected void onStop() {
+    @Override
+    protected void onStop() {
         super.onStop();
 
         Log.e(TAG, "onStop");
     }
 
-    @Override protected void onDestroy() {
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
 
         Log.e(TAG, "onDestroy");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="me.chunyu.spike.wcl_activity_lifecycle_demo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="org.wangchenlong.wcl_activity_lifecycle_demo">
 
     <application
         android:allowBackup="true"
@@ -22,7 +22,7 @@
             android:name=".TranslateActivity"
             android:theme="@style/AppThemeTranslucent"/>
 
-        <activity android:name=".SecondActivity"/>
+        <activity android:name="org.wangchenlong.wcl_activity_lifecycle_demo.SecondActivity"/>
 
     </application>
 
