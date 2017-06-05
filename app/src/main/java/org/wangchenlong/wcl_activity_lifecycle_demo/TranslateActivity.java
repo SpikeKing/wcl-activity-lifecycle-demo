@@ -1,3 +1,13 @@
+//====================================================================
+//
+//      Copyright (C) 2016-2017 王辰龙
+//      All rights reserved
+//
+//      Created by 王辰龙
+//      https://github.com/SpikeKing
+//
+//====================================================================
+
 package org.wangchenlong.wcl_activity_lifecycle_demo;
 
 import android.os.Bundle;
