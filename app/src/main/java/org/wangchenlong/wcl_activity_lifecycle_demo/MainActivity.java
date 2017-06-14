@@ -32,13 +32,13 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.main_b_second)
     Button mBSecond; // 第二个页面
 
-    private static final String EXTRA_TEXT = "extra_text";
+    private static final String EXTRA_TEXT = "extra_text"; // 用于在Activity中模拟状态的存储
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+        ButterKnife.bind(this); // 绑定ButterKnife，并初始化
 
         mBTranslucent.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,12 +54,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 获取EXTRA_TEXT的状态存储信息
         if (savedInstanceState != null) {
             String txt = savedInstanceState.getString(EXTRA_TEXT);
             Log.e(TAG, "[onCreate]savedInstanceState: " + txt);
         }
 
-        Log.e(TAG, "onCreate");
+        Log.e(TAG, "onCreate"); // 调用提示
     }
 
     @Override
@@ -73,8 +74,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
 
-        String txt = savedInstanceState.getString(EXTRA_TEXT);
-        Log.e(TAG, "[onRestoreInstanceState]savedInstanceState: " + txt);
+        // 恢复状态
+        if (savedInstanceState != null) {
+            String txt = savedInstanceState.getString(EXTRA_TEXT);
+            Log.e(TAG, "[onRestoreInstanceState]savedInstanceState: " + txt);
+        }
 
         Log.e(TAG, "onRestoreInstanceState");
     }
@@ -96,7 +100,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(EXTRA_TEXT, "C.L.Wang");
+
+        // 写入状态
+        if (outState != null) {
+            outState.putString(EXTRA_TEXT, "C.L.Wang");
+        }
 
         Log.e(TAG, "onSaveInstanceState");
     }

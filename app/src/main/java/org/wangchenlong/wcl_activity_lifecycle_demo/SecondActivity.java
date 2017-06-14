@@ -26,28 +26,24 @@ public class SecondActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-        Log.e(TAG, "onCreate");
+        Log.e(TAG, "onCreate"); // 生命周期
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
-        Log.e(TAG, "onPause");
+        Log.e(TAG, "onPause"); // 生命周期
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-
-        Log.e(TAG, "onStop");
+        Log.e(TAG, "onStop"); // 生命周期
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-        Log.e(TAG, "onDestroy");
+        Log.e(TAG, "onDestroy"); // 生命周期
     }
 }

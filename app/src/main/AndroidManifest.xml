@@ -22,7 +22,7 @@
             android:name=".TranslateActivity"
             android:theme="@style/AppThemeTranslucent"/>
 
-        <activity android:name="org.wangchenlong.wcl_activity_lifecycle_demo.SecondActivity"/>
+        <activity android:name=".SecondActivity"/>
 
     </application>
 
